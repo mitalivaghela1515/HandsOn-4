@@ -1,0 +1,22 @@
+#Problem 2
+
+def remove_duplicates(sorted_array):
+   
+   unique_array = []
+
+   for num in sorted_array:
+    
+    if not unique_array or num != unique_array[-1]:
+      unique_array.append(num)
+return unique_array
+
+# Example usage:
+array1 = [2, 2, 2, 2, 2]
+
+array2 = [1, 2, 2, 3, 4, 4, 4, 5, 5]
+
+unique_array1 = remove_duplicates(array1)
+unique_array2 = remove_duplicates(array2)
+
+print("Array 1:", unique_array1)
+print("Array 2:", unique_array2)
